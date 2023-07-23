@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     private let gridCollectionView: UICollectionView = {
-        let cv = UICollectionView()
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         cv.translatesAutoresizingMaskIntoConstraints = false
         return cv
     }()
