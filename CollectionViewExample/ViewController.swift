@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     private let gridCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: 200, height: 200)
+        layout.scrollDirection = .horizontal
+//        layout.minimumLineSpacing = 200
+//        layout.minimumInteritemSpacing =  200
         let cv = UICollectionView(frame: .zero,
                                   collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
