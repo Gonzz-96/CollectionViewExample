@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     private let gridCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = .init(width: 200, height: 200)
+        layout.itemSize = .init(width: 200, height: 60)
         layout.scrollDirection = .horizontal
 //        layout.minimumLineSpacing = 200
 //        layout.minimumInteritemSpacing =  200
@@ -28,13 +28,13 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
 
         gridCollectionView.backgroundColor = .blue
-        gridCollectionView.register(UICollectionViewCell.self,
-                                    forCellWithReuseIdentifier: kCellIdentifier)
+        gridCollectionView.register(SwiftBetaCollectionViewCell.self,
+                                    forCellWithReuseIdentifier: SwiftBetaCollectionViewCell.id)
         gridCollectionView.dataSource = self
         view.addSubview(gridCollectionView)
 
         NSLayoutConstraint.activate([
-            gridCollectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            gridCollectionView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             gridCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             gridCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             gridCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -52,12 +52,13 @@ extension ViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =
-            collectionView.dequeueReusableCell(
-                withReuseIdentifier: kCellIdentifier,
-                for: indexPath
-            )
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: SwiftBetaCollectionViewCell.id,
+            for: indexPath
+        ) as! SwiftBetaCollectionViewCell
         cell.backgroundColor = .red
+        let model = house[indexPath.row]
+        cell.configure(model: model)
         return cell
     }
 }

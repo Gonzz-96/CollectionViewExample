@@ -13,6 +13,7 @@
 		6196A9E22A6CC836004419F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6196A9E12A6CC836004419F4 /* Assets.xcassets */; };
 		6196A9E52A6CC836004419F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6196A9E32A6CC836004419F4 /* LaunchScreen.storyboard */; };
 		6196A9ED2A6CCB09004419F4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196A9EC2A6CCB09004419F4 /* Device.swift */; };
+		6196A9EF2A6CD24E004419F4 /* SwiftBetaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6196A9EE2A6CD24E004419F4 /* SwiftBetaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6196A9E42A6CC836004419F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6196A9E62A6CC836004419F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6196A9EC2A6CCB09004419F4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		6196A9EE2A6CD24E004419F4 /* SwiftBetaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBetaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6196A9E12A6CC836004419F4 /* Assets.xcassets */,
 				6196A9E32A6CC836004419F4 /* LaunchScreen.storyboard */,
 				6196A9E62A6CC836004419F4 /* Info.plist */,
+				6196A9EE2A6CD24E004419F4 /* SwiftBetaCollectionViewCell.swift */,
 			);
 			path = CollectionViewExample;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6196A9DD2A6CC834004419F4 /* ViewController.swift in Sources */,
+				6196A9EF2A6CD24E004419F4 /* SwiftBetaCollectionViewCell.swift in Sources */,
 				6196A9D92A6CC834004419F4 /* AppDelegate.swift in Sources */,
 				6196A9DB2A6CC834004419F4 /* SceneDelegate.swift in Sources */,
 				6196A9ED2A6CCB09004419F4 /* Device.swift in Sources */,
